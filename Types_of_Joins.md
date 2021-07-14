@@ -19,6 +19,7 @@ Moreover, we can combine three or more map-side joins into a single map-side joi
 
 **Limitations:**
 
+
 - First, the major restriction is, we can never convert Full outer joins to map-side joins.
 - However, it is possible to convert a left-outer join to a map-side join in the Hive. However, only possible since the right table that is to the right side of the join conditions, is lesser than 25 MB in size.
 - Also, we can convert a right-outer join to a map-side join in the Hive. Similarly, only possible if the left table size is lesser than 25 MB.
